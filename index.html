@@ -73,29 +73,7 @@
         
         </div>
         </div>
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/6.4.0/firebase-app.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#config-web-app -->
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyDeh3EERjvnE81ITmysUvReJzfpiZoIzwE",
-    authDomain: "basquiavito-448db.firebaseapp.com",
-    databaseURL: "https://basquiavito-448db.firebaseio.com",
-    projectId: "basquiavito-448db",
-    storageBucket: "",
-    messagingSenderId: "558763986561",
-    appId: "1:558763986561:web:200ba34b1571a563"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-    // getting the text value from the database
- var bigOne = document.getElementById('bigOne');
- var dbRef = firebase.database().ref().child('text');
- dbRef.on('value', snap => bigOne.innerText = snap.val());</script>   
     </body>
 </html>
     
